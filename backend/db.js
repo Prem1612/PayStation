@@ -1,7 +1,8 @@
 //mongodb://localhost:27017/
+import { MONGO_LINK } from "./config";
 
 const mongoose= require("mongoose");
-mongoose.connect("mongodb+srv://premyadav160731:Am%40r1612@cluster0.tzlaj9o.mongodb.net/dbname");
+mongoose.connect(MONGO_LINK);
 
 const userschema= new mongoose.Schema({
     username: {
